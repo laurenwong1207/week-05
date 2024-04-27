@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Data Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Excel Collection Manager</h1>
+        
+        <div class="form-section">
+            <h2>Add New Row</h2>
+            <form id="addForm">
+                <input type="text" id="newType" placeholder="Enter Type" required>
+                <input type="text" id="newData" placeholder="Enter Data" required>
+                <button type="submit">Add Row</button>
+            </form>
+        </div>
+
+        <div class="form-section">
+            <h2>Upload New File</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" id="fileInput" name="excelFile" required>
+                <button type="button" onclick="uploadFile()">Upload File</button>
+            </form>
+        </div>
+
+        <div class="table-section">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Type</th>
+                        <th>Kal</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="canvas-container">
+        <!-- p5.js 将在这里创建画布 -->
+        <script src="scripts.js"></script>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* 基本样式重置 */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column; /* 排列主要内容为列方式 */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section, .table-section {
+    margin: 20px 0;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.canvas-container {
+    width: 80%;  /* 或者任何符合页面设计的宽度 */
+    margin: 20px auto; /* 水平居中显示 */
+    background-color: #f0f0f0; /* 背景色，可选 */
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* 优化表格列宽 */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], input[type="file"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;  /* 调整宽度填充父容器 */
+    box-sizing: border-box;  /* 包括 padding 和 border 在内的总宽度 */
+}
