@@ -15,7 +15,7 @@ app.use(express.json());
 const uploadsDir = path.join(__dirname, 'uploads');
 fs.mkdirSync(uploadsDir, { recursive: true }); // Ensure the uploads directory exists
 
-const uri = "mongodb+srv://xjiajieathit:xz1bQ0CNnZRMWVlk@datavisual.uswwe6f.mongodb.net/?retryWrites=true&w=majority&appName=dataVisual";
+const uri = mongodb+srv://laurenwong1207:1W3u0MgzYvHpRMSA@cluster0.jtgfwcd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
