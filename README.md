@@ -21,5 +21,5 @@ I want to incorporating the motion of particles into personal finance applicatio
 ## API Reference
 
 ## Deployment
-https://fortunate-oceanic-chasmosaurus.glitch.me
+
 # week-05
